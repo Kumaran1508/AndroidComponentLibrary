@@ -23,6 +23,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            consumerProguardFiles("consumer-rules.pro")
         }
     }
     compileOptions {
@@ -42,35 +43,38 @@ android {
 
 publishing {
     publications {
-        create<MavenPublication>("release") {
-            groupId = "com.github.Kumaran1508" // Replace with your package name
-            artifactId = "day-night-switch"       // Replace with your library name
-            version = "1.0.4" // Library version
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+                groupId = "com.github.Kumaran1508" // Replace with your package name
+                artifactId = "daynightswitch"       // Replace with your library name
+                version = "1.0.5" // Library version
 
-            pom {
-                name.set("DayNightSwitch Library")
-                description.set("An Android library for day-night switches.")
-                url.set("https://github.com/Kumaran1508/AndroidComponentLibrary") // Replace with your repo URL
+                pom {
+                    name.set("DayNightSwitch Library")
+                    description.set("An Android library for day-night switches.")
+                    url.set("https://github.com/Kumaran1508/AndroidComponentLibrary") // Replace with your repo URL
 
-                licenses {
-                    license {
-                        name.set("Apache License 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0")
+                    licenses {
+                        license {
+                            name.set("Apache License 2.0")
+                            url.set("http://www.apache.org/licenses/LICENSE-2.0")
+                        }
                     }
-                }
 
-                developers {
-                    developer {
-                        id.set("teknophase")
-                        name.set("Kumaran")
-                        email.set("kumarans1508@gamil.com")
+                    developers {
+                        developer {
+                            id.set("teknophase")
+                            name.set("Kumaran")
+                            email.set("kumarans1508@gamil.com")
+                        }
                     }
-                }
 
-                scm {
-                    connection.set("scm:git:git://github.com/Kumaran1508/AndroidComponentLibrary.git")
-                    developerConnection.set("scm:git:ssh://github.com/Kumaran1508/AndroidComponentLibrary.git")
-                    url.set("https://github.com/Kumaran1508/AndroidComponentLibrary")
+                    scm {
+                        connection.set("scm:git:git://github.com/Kumaran1508/AndroidComponentLibrary.git")
+                        developerConnection.set("scm:git:ssh://github.com/Kumaran1508/AndroidComponentLibrary.git")
+                        url.set("https://github.com/Kumaran1508/AndroidComponentLibrary")
+                    }
                 }
             }
         }
@@ -83,4 +87,10 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+}
+
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.1")
+    }
 }
