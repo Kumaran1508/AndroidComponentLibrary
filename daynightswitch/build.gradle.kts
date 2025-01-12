@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.teknophase.testapp"
+    namespace = "com.teknophase.daynightswitch"
     compileSdk = 33
 
     defaultConfig {
@@ -48,7 +48,7 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.Kumaran1508" // Replace with your package name
                 artifactId = "daynightswitch"       // Replace with your library name
-                version = "1.0.5" // Library version
+                version = "1.0.6" // Library version
 
                 pom {
                     name.set("DayNightSwitch Library")
