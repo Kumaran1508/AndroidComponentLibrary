@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="123dp"
+    android:height="47dp"
+    android:viewportWidth="123"
+    android:viewportHeight="47">
+  <path
+      android:pathData="M89.5,33.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:strokeAlpha="0.75"
+      android:fillColor="#D5CFCF"
+      android:fillAlpha="0.75"/>
+  <path
+      android:pathData="M51.5,39.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:strokeAlpha="0.75"
+      android:fillColor="#D5CFCF"
+      android:fillAlpha="0.75"/>
+  <path
+      android:pathData="M118.5,21.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:strokeAlpha="0.75"
+      android:fillColor="#D5CFCF"
+      android:fillAlpha="0.75"/>
+  <path
+      android:pathData="M68,32m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"
+      android:strokeAlpha="0.75"
+      android:fillColor="#D5CFCF"
+      android:fillAlpha="0.75"/>
+  <path
+      android:pathData="M32,37m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"
+      android:strokeAlpha="0.75"
+      android:fillColor="#D5CFCF"
+      android:fillAlpha="0.75"/>
+  <path
+      android:pathData="M71,45m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M15,47m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M110,30m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M98.5,40.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M120,20m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M56.5,48.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:fillColor="#D9D9D9"/>
+  <path
+      android:pathData="M40.5,55.5m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+      android:fillColor="#D9D9D9"/>
+</vector>
