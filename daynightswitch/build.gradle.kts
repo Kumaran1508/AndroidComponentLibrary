@@ -45,7 +45,34 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.Kumaran1508" // Replace with your package name
             artifactId = "day-night-switch"       // Replace with your library name
-            version = "1.0.1"               // Library version
+            version = "1.0.3" // Library version
+
+            pom {
+                name.set("DayNightSwitch Library")
+                description.set("An Android library for day-night switches.")
+                url.set("https://github.com/Kumaran1508/AndroidComponentLibrary") // Replace with your repo URL
+
+                licenses {
+                    license {
+                        name.set("Apache License 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("teknophase")
+                        name.set("Kumaran")
+                        email.set("kumarans1508@gamil.com")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:git://github.com/Kumaran1508/AndroidComponentLibrary.git")
+                    developerConnection.set("scm:git:ssh://github.com/Kumaran1508/AndroidComponentLibrary.git")
+                    url.set("https://github.com/Kumaran1508/AndroidComponentLibrary")
+                }
+            }
         }
     }
 }
