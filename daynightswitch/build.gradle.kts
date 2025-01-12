@@ -45,7 +45,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.Kumaran1508" // Replace with your package name
             artifactId = "day-night-switch"       // Replace with your library name
-            version = "1.0.3" // Library version
+            version = "1.0.4" // Library version
 
             pom {
                 name.set("DayNightSwitch Library")
