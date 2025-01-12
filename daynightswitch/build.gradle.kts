@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.teknophase.daynightswitch"
+    namespace = "com.teknophase.testapp"
     compileSdk = 33
 
     defaultConfig {
@@ -43,10 +43,9 @@ android {
 publishing {
     publications {
         create<MavenPublication>("release") {
-            from(components["release"])
-            groupId = "com.teknophase.day-night-switch" // Replace with your package name
+            groupId = "com.github.Kumaran1508" // Replace with your package name
             artifactId = "day-night-switch"       // Replace with your library name
-            version = "1.0.0"               // Library version
+            version = "1.0.1"               // Library version
         }
     }
 }
